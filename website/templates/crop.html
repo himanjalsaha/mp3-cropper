@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>mp3 cropper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <p>duration:{{duration}}</p>
+    <div class="card">
+    <form method="post" action="{{url_for('views.crop')}}" enctype="multipart/form-data" >
+      <label for="lower-limit">Time Lower Limit:</label>
+        <input type="time" name="lower" id="lower-limit">
+
+        <label for="upper-limit">Time Upper Limit:</label>
+        <input type="time" name="upper" id="upper-limit" >
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+
+
+    
+    
+</body>
+</html>
